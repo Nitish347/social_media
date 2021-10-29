@@ -47,17 +47,17 @@ class Post extends StatelessWidget {
                   size: 35,
                 ),
                 Icon(
-                  Icons.comment_bank_outlined,
+                  FontAwesomeIcons.comment,
                   size: 32,
                 ),
                 Icon(
-                  Icons.share_rounded,
+                  FontAwesomeIcons.share,
                   size: 30,
                 ),
               ],
             ),
             trailing: Icon(
-              FontAwesomeIcons.python,
+             Icons.bookmark,
               size: 35,
               color: Colors.black,
             ),
@@ -129,11 +129,11 @@ class Post extends StatelessWidget {
                   size: 35,
                 ),
                 Icon(
-                  Icons.comment_bank_outlined,
+                  FontAwesomeIcons.comment,
                   size: 32,
                 ),
                 Icon(
-                  Icons.share_rounded,
+                  FontAwesomeIcons.share,
                   size: 30,
                 ),
               ],
@@ -211,11 +211,11 @@ class Post extends StatelessWidget {
                   size: 35,
                 ),
                 Icon(
-                  Icons.comment_bank_outlined,
+                  FontAwesomeIcons.comment,
                   size: 32,
                 ),
                 Icon(
-                  Icons.share_rounded,
+                  FontAwesomeIcons.share,
                   size: 30,
                 ),
               ],
@@ -291,11 +291,11 @@ class Post extends StatelessWidget {
                   size: 35,
                 ),
                 Icon(
-                  Icons.comment_bank_outlined,
+                  FontAwesomeIcons.comment,
                   size: 32,
                 ),
                 Icon(
-                  Icons.share_rounded,
+                  FontAwesomeIcons.share,
                   size: 30,
                 ),
               ],
@@ -373,11 +373,11 @@ class Post extends StatelessWidget {
                   size: 35,
                 ),
                 Icon(
-                  Icons.comment_bank_outlined,
+                  FontAwesomeIcons.comment,
                   size: 32,
                 ),
                 Icon(
-                  Icons.share_rounded,
+                  FontAwesomeIcons.share,
                   size: 30,
                 ),
               ],

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:social_media/bottom_bar.dart';
 
 
@@ -22,8 +23,8 @@ class Myapp2 extends StatelessWidget {
               ),
             ),
             title: Text(
-              "_nitish26_",
-              style: TextStyle(color: Colors.black,fontSize: 25,fontFamily: 'cursive',fontWeight: FontWeight.w700),
+              "Chats",
+              style: TextStyle(color: Colors.black,fontSize: 35,fontFamily: 'cursive',fontWeight: FontWeight.w700),
             ),
             centerTitle: true,
             leading: MaterialButton(onPressed: (){
@@ -34,8 +35,8 @@ class Myapp2 extends StatelessWidget {
                 child:Icon(Icons.arrow_back_ios,size: 25,color: Colors.black,)),
             actions: const [
               Icon(
-                Icons.videocam_rounded,
-                size: 33,
+                FontAwesomeIcons.video,
+                size: 28,
                 color: Colors.black,
               ),
               SizedBox(

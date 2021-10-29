@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:social_media/post.dart';
 import 'package:social_media/story.dart';
 import 'message.dart';
@@ -19,7 +20,7 @@ class MyApp1 extends StatelessWidget {
             ),
             // backgroundColor: Colors.white,
             leading: Icon(
-              Icons.camera_alt_outlined,
+              FontAwesomeIcons.instagram,
               size: 33,
               color: Colors.black,
             ),
@@ -27,7 +28,7 @@ class MyApp1 extends StatelessWidget {
             title: Center(child: const Text(
               'Instagram',
               style: TextStyle(
-                  fontFamily: 'cursive', color: Colors.black, fontSize: 30,fontWeight: FontWeight.bold),
+                  fontFamily: 'cursive', color: Colors.black, fontSize: 30,fontWeight: FontWeight.w800),
             ),),
             actions: [
               MaterialButton(onPressed: (){
@@ -35,7 +36,7 @@ class MyApp1 extends StatelessWidget {
                   return Myapp2();
                 }));
               },
-                  child:Icon(Icons.message_sharp,size: 33,color: Colors.black,)),
+                  child:Icon(FontAwesomeIcons.telegramPlane,size: 33,color: Colors.black,)),
             ],
           ),
           // bottomNavigationBar: BottomBar(),

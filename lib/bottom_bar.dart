@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:social_media/login.dart';
 import 'package:social_media/profile.dart';
+import 'package:social_media/reels.dart';
 
 import 'home.dart';
 
@@ -21,9 +22,7 @@ class BottomMenu extends StatefulWidget {
 class _BottomMenuState extends State<BottomMenu> {
   int index = 0;
   final List<Widget> children =[MyApp1(),
-    Center(
-      child: Icon(Icons.camera,size: 100,),
-    ),Center(
+    reels(),Center(
       child: Icon(Icons.add,size: 100,),
     ),Center(
       child: Icon(Icons.favorite,size: 100,),
