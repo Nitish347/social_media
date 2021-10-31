@@ -1,16 +1,9 @@
-# social_media
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![login page](https://user-images.githubusercontent.com/87604110/139579833-df11df67-29d3-4ef8-8207-6824b772823b.jpg)
+![home](https://user-images.githubusercontent.com/87604110/139580037-a917d393-fd12-4c6e-8095-be3efea32b82.jpg)
+![carousel_slider](https://user-images.githubusercontent.com/87604110/139580059-1dda2acc-d46b-4086-a3bb-c891565c30d2.jpg)
+![Search](https://user-images.githubusercontent.com/87604110/139580088-77d456c9-4723-4180-92e3-1257e4b26d69.jpg)
+![Add](https://user-images.githubusercontent.com/87604110/139580120-8c448af4-7ed5-4ff2-bc71-4a87ee1681c0.jpg)
+![Activity](https://user-images.githubusercontent.com/87604110/139580132-b5e763e7-ee83-4824-aadf-5222c9f5e733.jpg)
+![Profile](https://user-images.githubusercontent.com/87604110/139580144-0245035c-6b08-4144-ab5b-3fd76dd31901.jpg)
+![Drawer](https://user-images.githubusercontent.com/87604110/139580152-b45a4546-0fae-4b6e-b458-23d6badea4fb.jpg)
+![Message](https://user-images.githubusercontent.com/87604110/139580157-2aeb0487-7752-4c9d-9849-0ad34c70d63d.jpg)
