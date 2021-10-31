@@ -84,6 +84,7 @@ class InputField extends StatelessWidget{
               )
           ),
           child: TextField(
+            obscureText: true,
             decoration: InputDecoration(
                 hintText: "Password",
                 hintStyle: TextStyle(color: Colors.grey),
@@ -101,7 +102,8 @@ class Button extends StatelessWidget{
   Widget build(BuildContext context) {
     return Container(
       height: 50,
-      margin: EdgeInsets.symmetric(horizontal: 50),
+      width: 200,
+      // margin: EdgeInsets.symmetric(horizontal: 60),
       decoration: BoxDecoration(
         color: Colors.cyan,
         borderRadius: BorderRadius.circular(10),
@@ -112,7 +114,7 @@ class Button extends StatelessWidget{
             return BottomMenu();
           }));
         },
-          child: Text('Login',style: TextStyle(
+          child: Text('     Login     ',style: TextStyle(
               color: Colors.white,
               fontSize: 20,
               fontWeight: FontWeight.bold

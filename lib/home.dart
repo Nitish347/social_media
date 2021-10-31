@@ -9,10 +9,11 @@ class MyApp1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
           appBar: AppBar(
             backgroundColor: Colors.cyan,
-          toolbarHeight: 60,
+          toolbarHeight: 50,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.vertical(
                 bottom: Radius.circular(30),
@@ -21,14 +22,14 @@ class MyApp1 extends StatelessWidget {
             // backgroundColor: Colors.white,
             leading: Icon(
               FontAwesomeIcons.instagram,
-              size: 33,
-              color: Colors.black,
+              size: 30,
+              color: Colors.white,
             ),
             titleSpacing: 3,
             title: Center(child: const Text(
               'Instagram',
               style: TextStyle(
-                  fontFamily: 'cursive', color: Colors.black, fontSize: 30,fontWeight: FontWeight.w800),
+                  fontFamily: 'cursive', color: Colors.white, fontSize: 30,fontWeight: FontWeight.w700),
             ),),
             actions: [
               MaterialButton(onPressed: (){
@@ -36,16 +37,16 @@ class MyApp1 extends StatelessWidget {
                   return Myapp2();
                 }));
               },
-                  child:Icon(FontAwesomeIcons.telegramPlane,size: 33,color: Colors.black,)),
+                  child:Icon(FontAwesomeIcons.facebookMessenger,size: 26,color: Colors.white,)),
             ],
           ),
           // bottomNavigationBar: BottomBar(),
           body: Column(
             children: [
               Story(),
-              Divider(
-                color: Colors.grey,
-              ),
+              // Divider(
+              //   color: Colors.grey,
+              // ),
               Expanded(child: Post())
             ],
           )

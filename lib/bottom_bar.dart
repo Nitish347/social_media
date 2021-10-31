@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:social_media/Add.dart';
+import 'package:social_media/activity.dart';
 import 'package:social_media/login.dart';
 import 'package:social_media/profile.dart';
-import 'package:social_media/reels.dart';
+import 'package:social_media/search.dart';
 
 import 'home.dart';
 
-void main() {
-  runApp(MaterialApp(
-    title: 'nitish',
-    home: BottomMenu(),
-  ));
-}
+// void main() {
+//   runApp(MaterialApp(
+//     title: 'nitish',
+//     home: BottomMenu(),
+//   ));
+// }
 
 class BottomMenu extends StatefulWidget {
   @override
@@ -22,17 +25,13 @@ class BottomMenu extends StatefulWidget {
 class _BottomMenuState extends State<BottomMenu> {
   int index = 0;
   final List<Widget> children =[MyApp1(),
-    reels(),Center(
-      child: Icon(Icons.add,size: 100,),
-    ),Center(
-      child: Icon(Icons.favorite,size: 100,),
-    ),
+    reels(),Add1(),
+    Activity(),
     Profile(),
   ];
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
+    return Scaffold(
           body: children[index],
           bottomNavigationBar: BottomNavigationBar(
             currentIndex: index,
@@ -44,12 +43,19 @@ class _BottomMenuState extends State<BottomMenu> {
             type: BottomNavigationBarType.fixed,
             items: const [
               BottomNavigationBarItem(icon: Icon(Icons.home,color: Colors.cyan,), label: 'HOME', ),
-              BottomNavigationBarItem(icon: Icon(Icons.camera,color: Colors.cyan,), label: 'REELS'),
-              BottomNavigationBarItem(icon: Icon(Icons.add,color: Colors.cyan,size: 25,), label: 'ADD'),
-              BottomNavigationBarItem(icon: Icon(Icons.favorite,color: Colors.cyan,), label: 'NOTIFICATION'),
-              BottomNavigationBarItem(icon: CircleAvatar(backgroundImage: AssetImage('pp1.jpg'),radius: 15,), label: 'PROFILE'),
+              BottomNavigationBarItem(icon: Icon(Icons.search,color: Colors.cyan,), label: 'SEARCH'),
+              BottomNavigationBarItem(icon: Icon(Icons.add,color: Colors.cyan,), label: 'ADD'),
+              BottomNavigationBarItem(icon: Icon(Icons.favorite,color: Colors.cyan,), label: 'ACTIVITY'),
+              BottomNavigationBarItem(icon: CircleAvatar(backgroundImage: AssetImage('pic/pp1.jpg'),radius: 15,), label: 'PROFILE'),
             ],
           ),
-        ));
+        );
   }
 }
+
+
+//
+// void main(){
+//     runApp(Add1());
+//
+// }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 class Story extends StatelessWidget {
-  List<dynamic> story = [
+  var story = [
     'aish.jpg',
     'arpit.jpg',
     'claus.png',
@@ -22,8 +22,8 @@ class Story extends StatelessWidget {
                 return Padding(
                   padding: EdgeInsets.all(4.0),
                   child: Container(
-                    width: 80,
-                    height: 80,
+                    width: 65,
+                    height: 65,
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                       gradient: LinearGradient(
@@ -34,12 +34,13 @@ class Story extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(3.0),
                       child: Container(
-                        width: 65,
-                        height: 65,
+                        width: 50,
+                        height: 50,
                         decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                             image: DecorationImage(
-                                image: AssetImage('pp1.jpg'))),
+                                image: AssetImage('pic/pp1.jpg'))
+                        ),
                       ),
                     ),
                   ),

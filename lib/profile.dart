@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:social_media/drawer.dart';
 
 void main() {
   runApp(Profile());
@@ -7,8 +9,95 @@ void main() {
 class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
+      drawer: Drawer(
+
+        child: ListView(
+          children: <Widget>[
+            Container(
+                color: Colors.cyan,
+                height: 1000,
+                child:
+                Column(
+                  children: [
+                    SizedBox(height: 20,),
+                    Text('DRAWER',style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold,fontFamily: 'cursive',color: Colors.black),),
+                    SizedBox(height: 20,),
+                    Divider(color: Colors.black,height: 2,),
+                    SizedBox(height: 20,),
+                    Row(
+                      children: [
+                        Padding(padding: EdgeInsets.all(10)),
+                        Icon(Icons.settings,color: Colors.black,size: 40,),
+                        SizedBox(width: 20,),
+                        Text('Settings',style: TextStyle(fontSize: 18,color: Colors.white),)
+                      ],
+                    ),SizedBox(height: 20,),
+                    Row(
+                      children: [
+                        Padding(padding: EdgeInsets.all(10)),
+                        Icon(FontAwesomeIcons.clock,color: Colors.black,size: 33,),
+                        SizedBox(width: 20,),
+                        Text('  Your Activity',style: TextStyle(fontSize: 18,color: Colors.white),)
+                      ],
+                    ),SizedBox(height: 20,),
+                    Row(
+                      children: [
+                        Padding(padding: EdgeInsets.all(10)),
+                        Icon(Icons.bookmark_outline,color: Colors.black,size: 40,),
+                        SizedBox(width: 20,),
+                        Text('Saved',style: TextStyle(fontSize: 18,color: Colors.white),)
+                      ],
+                    ),SizedBox(height: 20,),
+                    Row(
+                      children: [
+                        Padding(padding: EdgeInsets.all(10)),
+                        Icon(Icons.format_list_bulleted,color: Colors.black,size: 38,),
+                        SizedBox(width: 20,),
+                        Text('Close Friends',style: TextStyle(fontSize: 18,color: Colors.white),)
+                      ],
+                    ),SizedBox(height: 20,),
+                    Row(
+                      children: [
+                        Padding(padding: EdgeInsets.all(10)),
+                        Icon(Icons.qr_code,color: Colors.black,size: 38,),
+                        SizedBox(width: 20,),
+                        Text('QR Code',style: TextStyle(fontSize: 18,color: Colors.white),)
+                      ],
+                    ),SizedBox(height: 20,),
+                    Row(
+                      children: [
+                        Padding(padding: EdgeInsets.all(10)),
+                        Icon(Icons.lock_outline,color: Colors.black,size: 38,),
+                        SizedBox(width: 20,),
+                        Text('Privacy',style: TextStyle(fontSize: 18,color: Colors.white),)
+                      ],
+                    ),SizedBox(height: 20,),
+                    Row(
+                      children: [
+                        Padding(padding: EdgeInsets.all(10)),
+                        Icon(Icons.color_lens_outlined,color: Colors.black,size: 40,),
+                        SizedBox(width: 20,),
+                        Text('Theme',style: TextStyle(fontSize: 18,color: Colors.white),)
+                      ],
+                    ),SizedBox(height: 20,),
+                    Row(
+                      children: [
+                        Padding(padding: EdgeInsets.all(10)),
+                        Icon(Icons.account_circle_outlined,color: Colors.black,size: 40,),
+                        SizedBox(width: 20,),
+                        Text('Account',style: TextStyle(fontSize: 18,color: Colors.white),)
+                      ],
+                    ),
+                  ],
+                )
+
+            ),
+
+
+          ],
+        ),
+      ),
         appBar: AppBar(
           backgroundColor: Colors.cyan,
           toolbarHeight: 60,
@@ -22,30 +111,17 @@ class Profile extends StatelessWidget {
           //   size: 25,
           //   color: Colors.white,
           // ),
-          titleSpacing: 3,
+          // titleSpacing: 5,
           title: Center(
             child: const Text(
               '_nitish26_',
               style: TextStyle(
                   fontFamily: 'cursive',
-                  color: Colors.black,
+                  color: Colors.white,
                   fontSize: 26,
                   fontWeight: FontWeight.bold),
             ),
           ),
-          actions: [
-            MaterialButton(
-                onPressed: () {
-                  // Navigator.push(context, MaterialPageRoute(builder: (context){
-                  //   return null();
-                  // }));
-                },
-                child: Icon(
-                  Icons.drag_indicator_sharp,
-                  size: 30,
-                  color: Colors.black,
-                )),
-          ],
         ),
         body: ListView(
           children: [
@@ -79,7 +155,7 @@ class Profile extends StatelessWidget {
                         decoration: const BoxDecoration(
                             shape: BoxShape.circle,
                             image:
-                                DecorationImage(image: AssetImage('pp1.jpg'))),
+                                DecorationImage(image: AssetImage('pic/pp1.jpg'))),
                       ),
                     ),
                   ),
@@ -109,8 +185,12 @@ class Profile extends StatelessWidget {
                     Text(
                       'B.Tech-2nd Year',
                       style: TextStyle(fontSize: 15),
-                    )
+                    ),
+
                   ],
+                ),
+                Container(
+                  width: 20,
                 )
               ],
             ),
@@ -124,27 +204,30 @@ class Profile extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Text(
-                  '   76\nPosts',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
+                  '     76\n  Posts',
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
                 ),
                 SizedBox(
                   width: 15,
                 ),
                 Text(
                   '     431\nFollowers',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
                 ),
                 SizedBox(
                   width: 15,
                 ),
                 Text(
                   '    334\nFollowing',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
                 ),
               ],
             ),
+            Divider(
+              color: Colors.cyan,
+            ),
             SizedBox(
-              height: 50,
+              height: 10,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -180,42 +263,41 @@ class Profile extends StatelessWidget {
             Column(
               children: [
                 Container(
-                  height: 500,
-                  child: Image(image: AssetImage('nitish5.jpg')),
+                  height: 430,
+                  child: Image(image: AssetImage('pr/1.jpg')),
                 ),
                 Container(
-                  height: 500,
-                  child: Image(image: AssetImage('nitish2.jpg')),
+                  height: 430,
+                  child: Image(image: AssetImage('pr/2.jpg')),
                 ),
                 Container(
-                  height: 500,
-                  child: Image(image: AssetImage('nitish3.jpg')),
+                  height: 430,
+                  child: Image(image: AssetImage('pr/3.jpg')),
                 ),
                 Container(
-                  height: 500,
-                  child: Image(image: AssetImage('nitish5.jpg')),
+                  height: 430,
+                  child: Image(image: AssetImage('pr/4.jpg')),
                 ),
                 Container(
-                  height: 500,
-                  child: Image(image: AssetImage('ppp.jpg')),
+                  height: 430,
+                  child: Image(image: AssetImage('pr/5.jpg')),
                 ),
                 Container(
-                  height: 500,
-                  child: Image(image: AssetImage('pp.jpg')),
+                  height: 430,
+                  child: Image(image: AssetImage('pr/6.jpg')),
                 ),
                 Container(
-                  height: 500,
-                  child: Image(image: AssetImage('pp1.jpg')),
+                  height: 430,
+                  child: Image(image: AssetImage('pr/7.jpg')),
                 ),
                 Container(
-                  height: 500,
-                  child: Image(image: AssetImage('profile.jpg')),
+                  height: 430,
+                  child: Image(image: AssetImage('pr/8.jpg')),
                 ),
               ],
             )
           ],
         ),
-      ),
-    );
+      );
   }
 }

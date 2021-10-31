@@ -29,6 +29,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  carousel_slider: ^4.0.0
+
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -36,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_svg : ^0.22.0
   font_awesome_flutter: ^9.2.0
+  animated_splash_screen: ^1.1.0
 
 dev_dependencies:
   flutter_test:
@@ -62,29 +65,33 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - IMG20210314031300_00.jpg
-    - profile.jpg
-    - aish.jpg
-    - arpit.jpg
-    - claus.png
-    - damon.jpg
-    - darshan.jpg
-    - elena.jpg
-    - emma.jpg
-    - aish1.jpg
-    - nitish.jpg
-    - caroline.png
-    - stephen.png
-    - bonnie1.jpg
-    - nitish1.jpg
-    - nitish2.jpg
-    - nitish3.jpg
-    - instagram-share.svg
-    - instagram-comment.svg
-    - koo.svg
-    - pp.jpg
-    - nitish5.jpg
-    - pp1.jpg
-    - ppp.jpg
+    - pic/
+    - pr/
+    - paintings/
+#    - assets/pic/
+#    - profile.jpg
+#    - aish.jpg
+#    - arpit.jpg
+#    - claus.png
+#    - damon.jpg
+#    - darshan.jpg
+#    - elena.jpg
+#    - emma.jpg
+#    - aish1.jpg
+#    - nitish.jpg
+#    - caroline.png
+#    - stephen.png
+#    - bonnie1.jpg
+#    - nitish1.jpg
+#    - nitish2.jpg
+#    - nitish3.jpg
+#    - instagram-share.svg
+#    - instagram-comment.svg
+#    - koo.svg
+#    - pp.jpg
+#    - nitish5.jpg
+#    - pp1.jpg
+#    - ppp.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

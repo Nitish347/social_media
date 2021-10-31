@@ -15,6 +15,7 @@ class Myapp2 extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+
           appBar: AppBar(
             backgroundColor: Colors.cyan,
             shape: RoundedRectangleBorder(
@@ -24,7 +25,7 @@ class Myapp2 extends StatelessWidget {
             ),
             title: Text(
               "Chats",
-              style: TextStyle(color: Colors.black,fontSize: 35,fontFamily: 'cursive',fontWeight: FontWeight.w700),
+              style: TextStyle(color: Colors.white,fontSize: 35,fontFamily: 'cursive',fontWeight: FontWeight.w700),
             ),
             centerTitle: true,
             leading: MaterialButton(onPressed: (){
@@ -32,21 +33,21 @@ class Myapp2 extends StatelessWidget {
                 return BottomMenu();
               }));
             },
-                child:Icon(Icons.arrow_back_ios,size: 25,color: Colors.black,)),
+                child:Icon(Icons.arrow_back_ios,size: 25,color: Colors.white,)),
             actions: const [
               Icon(
                 FontAwesomeIcons.video,
-                size: 28,
-                color: Colors.black,
+                size: 25,
+                color: Colors.white,
               ),
               SizedBox(
                 width: 20,
               ),
               Icon(
                 Icons.create,
-                size: 30,
-                color: Colors.black,
-              )
+                size: 25,
+                color: Colors.white,
+              ),
             ],
           ),
           body:SingleChildScrollView(child: Column(
@@ -92,102 +93,102 @@ class Myapp2 extends StatelessWidget {
               const ListTile(
                 title: Text('arpit_jaiswal'),
                 subtitle: Text('hello!!',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),),
-                leading: CircleAvatar(backgroundImage: AssetImage('arpit.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/arpit.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Aishwarya Coubey'),
                 subtitle: Text('Seen 2 min ago'),
-                leading: CircleAvatar(backgroundImage: AssetImage('aish.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/aish.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Damon'),
                 subtitle: Text('Typing....'),
-                leading: CircleAvatar(backgroundImage: AssetImage('damon.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/damon.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Elena'),
                 subtitle: Text('Shared a post'),
-                leading: CircleAvatar(backgroundImage: AssetImage('elena.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/elena.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Emma.watson'),
                 subtitle: Text('Sent last week'),
-                leading: CircleAvatar(backgroundImage: AssetImage('emma.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/emma.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Darshan raval'),
                 subtitle: Text('Liked a message'),
-                leading: CircleAvatar(backgroundImage: AssetImage('darshan.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/darshan.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Claus'),
                 subtitle: Text('Seen Tuesday'),
-                leading: CircleAvatar(backgroundImage: AssetImage('claus.png') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/claus.png') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Caroline'),
                 subtitle: Text('Seen 13 min ago'),
-                leading: CircleAvatar(backgroundImage: AssetImage('caroline.png') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/caroline.png') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Bonnie'),
                 subtitle: Text('Liked a message'),
-                leading: CircleAvatar(backgroundImage: AssetImage('bonnie1.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/bonnie1.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Stephen'),
                 subtitle: Text('Typing...'),
-                leading: CircleAvatar(backgroundImage: AssetImage('stephen.png') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/stephen.png') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ),const ListTile(
                 title: Text('arpit_jaiswal'),
                 subtitle: Text('hello!!',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),),
-                leading: CircleAvatar(backgroundImage: AssetImage('arpit.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/arpit.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Aishwarya Coubey'),
                 subtitle: Text('Seen 2 min ago'),
-                leading: CircleAvatar(backgroundImage: AssetImage('aish.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/aish.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Damon'),
                 subtitle: Text('Typing....'),
-                leading: CircleAvatar(backgroundImage: AssetImage('damon.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/damon.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Elena'),
                 subtitle: Text('Shared a post'),
-                leading: CircleAvatar(backgroundImage: AssetImage('elena.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/elena.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Emma.watson'),
                 subtitle: Text('Sent last week'),
-                leading: CircleAvatar(backgroundImage: AssetImage('emma.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/emma.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Darshan raval'),
                 subtitle: Text('Liked a message'),
-                leading: CircleAvatar(backgroundImage: AssetImage('darshan.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/darshan.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Claus'),
                 subtitle: Text('Seen Tuesday'),
-                leading: CircleAvatar(backgroundImage: AssetImage('claus.png') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/claus.png') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Caroline'),
                 subtitle: Text('Seen 13 min ago'),
-                leading: CircleAvatar(backgroundImage: AssetImage('caroline.png') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/caroline.png') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Bonnie'),
                 subtitle: Text('Liked a message'),
-                leading: CircleAvatar(backgroundImage: AssetImage('bonnie1.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/bonnie1.jpg') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ), const ListTile(
                 title: Text('Stephen'),
                 subtitle: Text('Typing...'),
-                leading: CircleAvatar(backgroundImage: AssetImage('stephen.png') ,backgroundColor: Colors.cyan,radius: 30,),
+                leading: CircleAvatar(backgroundImage: AssetImage('pic/stephen.png') ,backgroundColor: Colors.cyan,radius: 30,),
                 trailing: Icon(Icons.camera_alt_outlined,size: 35,),
               ),
             ],
